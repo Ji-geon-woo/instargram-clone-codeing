@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+        .box {
+            width: 200px;
+            height: 200px;
+            background: #000;
+        }
+        .box.on{
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <script>
+        // document.getElementsByClassName('box');
+        
+        const box = document.querySelector('.box');
+
+        console.log(box);
+
+        box.addEventListener('click',function(){
+            // console.log('눌렀어!');
+
+            // box.style.background = "blue";
+            
+            box.classList.toggle('on');
+        });
+
+        
+    
+    </script>
+
+</body>
+</html>
